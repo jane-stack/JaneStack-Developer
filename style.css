@@ -1,5 +1,27 @@
 body {
-    background: black;
-    color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 75px;
+    padding: 10px;
+}
+
+main {
+    margin-top: 95px;
+}
+
+#jane {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+#mytitle {
+    font-style: italic;
 }
