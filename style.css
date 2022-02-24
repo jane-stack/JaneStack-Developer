@@ -1,27 +1,125 @@
 body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-header {
-    position: fixed;
-    top: 0px;
+    background: white;
+    padding:0;
+    width: 80%;
+    margin: auto;
+  }
+  
+  nav {
+    background: #4D5656;
+    padding: 20px;
+    border: none;
+    float: none;
     width: 100%;
-    background-color: black;
+    margin: auto;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav li {
+    position: relative;
+    padding: 0 20px;
+    height: 100%
+    display: flex;
+  }
+  nav a {
+    z-index: 1;
     color: white;
-    height: 75px;
-    padding: 10px;
-}
-
-main {
-    margin-top: 95px;
-}
-
-#jane {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Poppins' ,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+  nav li:before {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #E6B0AA;
+    right: 0;
+    z-index: 0;
+    top: 33.33%;
+    transition: all 0.5s;
+  }
+  nav li:after {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #E6B0AA;
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+    transition: all 0.5s;
+  }
+  nav a:before {
+    position: absolute;
+    content: "";
+    height: 33.33%;
+    width: 0;
+    background-color: #E6B0AA;
+    bottom: 66.66%;
+    left: 0;
+    transition: all 0.5s;
+  }
+  nav li:hover:before,
+  nav li:hover:after,
+  nav li:hover a:before {
+    width: 100%;
+  
+  }
+  
+  .footer {
+    padding: 40px 0;
+    background-color: #a1a1a1;
+  }
+  .footer .social {
+    text-align: center;
+    padding-bottom: 25px;
     color: black;
-}
-
-#mytitle {
-    font-style: italic;
-}
+  }
+  .footer .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+  }
+  .footer .social .a:hover {
+    opacity: 0.9;
+  }
+  .footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .footer ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  .footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+  }
+  .footer .ul li a:hover {
+    opacity: 1;
+  }
